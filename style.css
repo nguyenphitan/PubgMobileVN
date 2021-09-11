@@ -1,0 +1,474 @@
+* {
+    /* font-family: 'Teko', sans-serif; */
+    font-family: 'Alumni Sans', sans-serif;
+    font-weight: 600;
+    /* font-size: 16px; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    min-width: 320px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    background-color: #111821;
+}
+
+/* logo */
+.logo {
+    /* flex-grow: 1; */
+    display: flex;
+    width: 18%;
+    height: 100%;
+    padding-left: 0.612%;
+}
+
+.logo img {
+    width: 33.28%;
+    height: 122.672%;
+    margin-top: 2.174%;
+    z-index: 1;
+}
+
+.logo h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    padding: 5.788% 0 0 5.788%;
+    color: #feab02;
+}
+
+.logo h1 span {
+    font-size: 0.6624em;
+    color: #d7d7d6;
+    margin-top: -6.8%;
+}
+
+/* list */
+.listHeader {
+    width: 30%;
+    height: 100%;
+    margin-left: 1.4%;
+    display: flex;
+    align-items: center;
+}
+
+.listHeader .list {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.listHeader .list li {
+    width: 14%;
+    margin: auto;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.listHeader .list li span i {
+    color: #eaa300;
+    font-size: 0.8em;
+}
+
+
+/* download btn */
+.downloadButton {
+    background-color: #eaa300;
+    width: 13.0212%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 2.912%;
+}
+
+.downloadButton a {
+    color: black;
+    font-size: 1.25em;
+    position: relative;
+    top: 0;
+}
+
+
+
+/* Content */
+
+/* Page 1 */
+.contentPageOne {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.pageOne {
+    width: 100%;
+    height: 100%;
+    background: url(./images/bg_1.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+/* Slogan */
+.slogan {
+    position: absolute;
+    width: 62%;
+    height: 184px;
+    background-image: url(./images/slogan_vi.png);
+    background-repeat: no-repeat;
+    /* background-attachment: scroll; */
+    background-size: 100% 100%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    top: 3.8%;
+    left: 20%;
+}
+
+/* Download-Wrap */
+.download-wrap {
+    width: 62%;
+    height: 82.4px;
+    position: absolute;
+    bottom: 44px;
+    margin: 0 20%;
+    display: flex;
+}
+
+.appstore, .chplay, .apk {
+    width: 28%;
+    height: 99%;
+    margin: 0 2%;
+}
+
+.appstore {
+    background: url(./images/downios.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.chplay {
+    background: url(./images/downgplay.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.apk {
+    background: url(./images/donwapk.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* Page 2 */
+.contentPageTwo {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* display: flex; */
+}
+
+.pageTwo {
+    width: 100%;
+    height: 100%;
+    background: url(./images/bg_2.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.videoPubg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.btn-play {
+    position: absolute;
+    top: 55%;
+    left: 46.4%;
+}
+
+.btn-play img {
+    width: 118px;
+    height: 100px;
+}
+
+.click {
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 102px;
+}
+
+.click:hover {
+    cursor: pointer;
+}
+
+.runVideo {
+    display: none;
+}
+
+.video {
+    width: 100%;
+    display: none;
+}
+
+.runVideo:checked ~ .video {
+    display: block;
+    position: relative;
+}
+
+
+
+
+/* Responsive */
+
+/* Mobile: width < 740px */
+.nav-bar-btn {
+    width: 5%;
+    height: 100%;
+    color: #ffffff;
+    font-size: 28px;
+    margin-top: 30px;
+    display: none;
+}
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1;
+    animation: fadeIn linear 0.2s;
+}
+
+/* Nav Mobile */
+
+.nav-mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    max-width: 100%;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 1;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.nav-mobile-list {
+    margin-top: 50px;
+}
+
+.nav-mobile-link {
+    color: #ffffff;
+    display: block;
+    padding: 8px 14px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.path {
+    border-top: 1px solid #413f3f;
+    margin: 5px 0;
+}
+
+.nav-mobile-close {
+    position: absolute;
+    font-size: 1.6em;
+    color: #ffffff;
+    top: 6px;
+    left: 6px;
+}
+
+/* input */
+.nav-input {
+    display: none;
+}
+
+.nav-input:checked ~ .nav-overlay {
+    display: block;
+}
+
+.nav-input:checked ~ .nav-mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 63.9375em) {
+
+    /* Header */
+    header {
+        height: 60px;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    .downloadButton {
+        height: 60px;
+        width: 34%;
+        /* right: 0; */
+    }
+
+
+    /* Content */
+
+    /* Page 1 */
+    .contentPageOne {
+        height: calc(100vh - 60px);
+    }
+
+    .pageOne {
+        background: url(./images/m_bg_1.jpg) no-repeat;
+        background-size: 100%;
+        background-position: top 20% center;
+    }
+
+    .slogan {
+        width: 90%;
+        left: 5%;
+        background-size: 100%;
+    }
+
+    .download-wrap {
+        width: 90%;
+        margin: 0 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        bottom: 3%;
+    }
+
+    .appstore, .apk, .chplay{
+        width: 40%;
+        height: 60%;
+    }
+
+
+    /* Page 2 */
+    .pageTwo {
+        width: 100%;
+        height: 100%;
+        background: url(./images/m_bg_2.jpg) no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .btn-play {
+        width: 30%;
+        left: 38.6%;
+    }
+
+    .btn-play img {
+        width: 80%;
+        height: auto;
+    }
+    
+    /* video */
+    .videoPubg {
+        display: none;
+    }
+
+    .btn-play {
+        top: 40%;
+        left: 38%;
+    }
+
+
+
+
+    /* ----------------------------------- */
+    /* Navbar */
+    .nav-bar-btn {
+        display: block;
+    }
+
+    .listHeader .list {
+        display: none;
+    }
+    
+}
+
+
+
+/* ----------------------------- */
+
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .logo {
+        width: 8%;
+    }
+
+
+    /* content */
+    /* page 2 */
+    .pageTwo {
+        width: 100%;
+        height: 100%;
+        background: url(./images/bg_2.jpg) no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .btn-play {
+        width: 20%;
+        left: 42.4%;
+    }
+
+    /* video */
+    .videoPubg {
+        display: block;
+        top: 28%;
+    }
+
+    .btn-play {
+        top: 43%;
+        left: 42%;
+    }
+
+
+}

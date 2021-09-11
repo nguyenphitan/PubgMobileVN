@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100;200;300;400&family=Teko:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>PUBG MOBILE VN</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://pubgm.zing.vn/imgs/icon_logo.png" alt="Logo Pubg">
+            <h1>
+                PUBG MOBILE VN
+                <span>CHÍNH THỨC TẠI VIỆT NAM</span>
+            </h1>
+        </div>
+
+        <!-- List -->
+        <div class="listHeader">
+            <ul class="list">
+                <li>TRANG CHỦ</li>
+                <li>TIN TỨC</li>
+                <li>THƯ VIỆN</li>
+                <li>GIẢI ĐẤU</li>
+                <li>
+                    <span>
+                        SỰ KIỆN
+                        <i class="fas fa-sort-up"></i>
+                    </span>
+                </li>
+            </ul>
+
+            <!-- Navbar -->
+            <label class="nav-bar-btn" for="nav-mobile-input">
+                <i class="far fa-bars"></i>
+            </label>
+
+        </div>
+
+        <!-- Download Button -->
+        <div class="downloadButton">
+            <a href="#">
+                <img src="./images/down_arrow.png" alt="">
+                TẢI GAME
+            </a>
+        </div>
+
+    </header>
+
+    <!-- Overlay -->
+    <input type="checkbox" class="nav-input" id="nav-mobile-input">
+    <label class="nav-overlay" for="nav-mobile-input"></label>
+    <div class="nav-mobile">
+        <label for="nav-mobile-input" class="nav-mobile-close">
+            <i class="fal fa-times"></i>
+        </label>
+        <ul class="nav-mobile-list">
+            <li class="nav-mobile-link">TRANG CHỦ</li>
+            <div class="path"></div>
+            <li class="nav-mobile-link">TIN TỨC</li>
+            <div class="path"></div>
+            <li class="nav-mobile-link">THƯ VIỆN</li>
+            <div class="path"></div>
+            <li class="nav-mobile-link">GIẢI ĐẤU</li>
+            <div class="path"></div>
+            <li class="nav-mobile-link">
+                SỰ KIỆN
+                <i class="fas fa-sort-up"></i>
+            </li>
+            <div class="path"></div>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <!-- Page 1 -->
+    <div class="contentPageOne">
+        <div class="pageOne">
+            <div class="conTentPageOne">
+
+                <div class="slogan"></div>
+
+                <div class="download-wrap">
+                    <div class="appstore"></div>
+                    <div class="chplay"></div>
+                    <div class="apk"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="contentPageTwo">
+        <div class="pageTwo"></div>
+        <video autoplay loop muted class="videoPubg" src="./videos/play.mp4"></video>
+        <div class="btn-play">
+            <label for="runVideoPubg" class="click">
+                <img src="./images/btn_play.png" alt="">
+            </label>
+            <input type="checkbox" class="runVideo" id="runVideoPubg">
+            <video autoplay loop muted class="video" src="./videos/play.mp4"></video>
+        </div>
+    </div>
+
+</body>
+</html>
