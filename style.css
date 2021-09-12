@@ -431,6 +431,10 @@ header {
         display: none;
     }
 
+    .runVideo:checked ~ .click {
+        display: none;
+    }
+
     .runVideo:checked ~ .videoNone {
         display: block;
         animation: fadeIn linear 0.2s;
