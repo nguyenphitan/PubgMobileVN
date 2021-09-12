@@ -106,7 +106,13 @@
                 <img src="./images/btn_play.png" alt="">
             </label>
             <input type="checkbox" class="runVideo" id="runVideoPubg">
-            <video autoplay loop muted class="video" src="./videos/play.mp4"></video>
+            <label for="runVideoPubg" class="endVideoNone">
+                <i class="fal fa-times"></i>
+            </label>
+            <video controls class="videoNone" src="./videos/play.mp4">
+                Trình duyệt của bạn không hỗ trợ.
+            </video>
+            <label for="runVideo" class="backgroundVideoNone"></label>
         </div>
     </div>
 
