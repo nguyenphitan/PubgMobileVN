@@ -199,7 +199,7 @@ header {
     position: relative;
     width: 10%;
     height: 120px;
-    top: -50%;
+    top: -59.4%;
     left: 44%;
 }
 
@@ -242,6 +242,233 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
 }
+
+
+/* Page 3 */
+.contentPageThree {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.pageThree {
+    width: 100%;
+    height: 100%;
+    background: url(./images/bg_3.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.erangel {
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    font-size: 4em;
+    z-index: 1;
+    color: #00426c;
+}
+
+.threeItem1 .solidItem p, .threeItem2 .solidItem p {
+    color: #95e8dd;
+}
+
+.threeItem1 .solidItem p:hover, .threeItem2 .solidItem p:hover {
+    color: #fff;
+}
+
+/* item 1 */
+.threeItem1 {
+    width: 100%;
+    height: 100%;
+    background: url(./images/s3_swipertop.png) no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+    position: absolute;
+    top: 0;
+}
+
+/* Solid 1 */
+.solid1 {
+    width: 26%;
+    height: 30%;
+    background: url(./images/s3_solid1.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 35%;
+}
+
+/* .solid1:hover, .solid2:hover, .solid3:hover, .solid4:hover,
+.solid5:hover, .solid6:hover {
+    cursor: pointer;
+} */
+
+.solid1 .solidItem {
+    width: 50%;
+    height: 58%;
+}
+
+.solidItem {
+    position: absolute;
+    background: url(./images/famous1.png) no-repeat;
+    background-size: contain;
+    text-align: center;
+    bottom: 48%;
+    left: 28%;
+    /* display: none; */
+}
+
+.solidItem p {
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+.bar {
+    width: 20px;
+    height: 20px;
+    background: url(./images/famous_bar.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 6%;
+}
+
+/* Solid 2 */
+.solid2 {
+    width: 34%;
+    height: 36%;
+    position: absolute;
+    background: url(./images/s3_solid2.png) no-repeat;
+    background-size: contain;
+    top: 26.8%;
+    left: 21.88%;
+}
+
+.solid2 .solidItem {
+    width: 42%;
+    height: 49%;
+    position: absolute;
+    top: -16%;
+    left: 34%;
+}
+
+/* Solid 3 */
+.solid3 {
+    width: 22%;
+    height: 20%;
+    position: absolute;
+    background: url(./images/s3_solid3.png) no-repeat;
+    background-size: contain;
+    right: 26%;
+    top: 12%;
+}
+
+.solid3 .solidItem {
+    width: 60%;
+    height: 86%;
+}
+
+/* Solid 4 */
+.solid4 {
+    width: 26%;
+    height: 44%;
+    position: absolute;
+    background: url(./images/s3_solid4.png) no-repeat;
+    background-size: contain;
+    right: 2%;
+    top: 8.4%;
+}
+
+.solid4 .solidItem {
+    width: 50%;
+    height: 50%;
+    background: url(./images/famous3.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -14%;
+    left: 38%;
+}
+
+.solid4 .solidItem p {
+    position: absolute;
+    bottom: 24%;
+    left: 8%;
+}
+
+.solid4 .bar {
+    position: absolute;
+    top: 0;
+    left: 14%;
+}
+
+/* Solid 5 */
+.solid5 {
+    width: 26%;
+    height: 40%;
+    position: absolute;
+    background: url(./images/s3_solid5.png) no-repeat;
+    background-size: contain;
+    right: 28%;
+    bottom: 24%;
+}
+
+.solid5 .solidItem {
+    width: 48%;
+    height: 50%;
+    position: absolute;
+    top: -14%;
+}
+
+.solid5 .bar {
+    bottom: 12%;
+}
+
+
+/*  item 2 */
+
+.threeItem2 {
+    width: 100%;
+    height: calc(100vh - 67%);
+    background: url(./images/s3_swiperbot.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Solid 6 */
+.solid6 {
+    width: 28%;
+    height: 80%;
+    position: absolute;
+    background: url(./images/s3_solid6.png) no-repeat;
+    background-size: contain;
+    left: 30%;
+    bottom: 0;
+}
+
+.solid6 .solidItem {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: -48%;
+}
+
+.solid6 .solidItem p {
+    position: absolute;
+    top: 4%;
+    left: 8%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------- */
 
 
 
@@ -333,6 +560,8 @@ header {
         opacity: 1;
     }
 }
+
+/* All */
 
 @media (max-width: 63.9375em) {
 
@@ -486,9 +715,106 @@ header {
 
 /* Mobile */
 @media (max-width: 46.1875em) {
+
+    /* Page 2 */
     .runVideo:checked ~ .videoNone {
         top: -110%;
     }
+
+
+    /* Page 3 */
+    .pageThree {
+        background: url(./images/m_bg_3.jpg) no-repeat;
+    }
+
+    .solid1 .solidItem, .solid2 .solidItem, .solid4 .solidItem,
+    .solid5 .solidItem, .solid3 .solidItem, .solid6 .solidItem {
+        width: 30%;
+        height: 60%;
+    }
+
+    .solid1 .solidItem p, .solid2 .solidItem p, .solid4 .solidItem p,
+    .solid5 .solidItem p, .solid3 .solidItem p, .solid6 .solidItem p {
+        font-size: 1em;
+    }
+
+    .solid1 .solidItem .bar, .solid2 .solidItem .bar, .solid4 .solidItem .bar,
+    .solid5 .solidItem .bar, .solid3 .solidItem .bar, .solid6 .solidItem .bar {
+        width: 10px;
+        height: 10px;
+    }
+    /* item 1 */
+
+    .contentPageThree {
+        overflow: hidden;
+    }
+
+    .erangel {
+        font-size: 3em;
+    }
+
+    /* item 1 */
+    .threeItem1 {
+        width: 200%;
+        height: 50%;
+        background-size: 100%;
+        top: 20%;
+    }
+
+    /* .solid1 .solidItem p, .solid2 .solidItem p, .solid3 .solidItem p,
+    .solid4 .solidItem p, .solid5 .solidItem p {
+        font-size: 1em;
+    } */
+
+    .solid1 .solidItem {
+        width: 60%;
+        height: 76%;
+    }
+
+    .solid2 .solidItem {
+        width: 60%;
+        height: 70%;
+    }
+
+    .solid3 .solidItem {
+        width: 68%;
+        height: 100%;
+    }
+
+    .solid4 .solidItem {
+        width: 64%;
+        height: 64%;
+    }
+
+    .solid5 .solidItem {
+        width: 60%;
+        height: 62%;
+    }
+
+
+    /* item 2 */
+    .threeItem2 {
+        background: url(./images/m_s3_swiperbot.png) no-repeat;
+        background-size: contain;
+        height: 46.702%;
+    }
+
+    .solid6 {
+        width: 84%;
+        height: 64%;
+        background: url(./images/m_s3_solid6.png) no-repeat;
+        background-size: contain;
+        left: 14%;
+    }
+
+    .solid6 .solidItem {
+        width: 50%;
+        height: 50%;
+        top: -34%;
+    }
+
+
+
 }
 
 
